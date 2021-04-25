@@ -75,22 +75,10 @@ void MainWindow::on_pushButton_clicked()
     ui->progressBar->setMaximum(100);
     for( int i = 0; i <101; ++i ) {
        ui->progressBar->setValue(i);
-       QThread::msleep(100);
+       QThread::msleep(50);
     }
 
-    ui->label_11->setText("Phase 2/3:Verfiy");
-    ui->label_14->setText("Verifying......");
-    for( int i = 0; i <101; ++i ) {
-       ui->progressBar->setValue(i);
-       QThread::msleep(100);
-    }
 
-    ui->label_11->setText("Phase 3/3:Install");
-    ui->label_14->setText("Installing......");
-    for( int i = 0; i <101; ++i ) {
-       ui->progressBar->setValue(i);
-       QThread::msleep(100);
-    }
 
 
     QMessageBox::information(this,"Update","The Update Is Compeleted.");
