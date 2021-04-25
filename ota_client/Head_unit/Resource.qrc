@@ -1,0 +1,28 @@
+<RCC>
+    <qresource prefix="/rec">
+        <file>img/3C3C5844-4430-48CD-BBE7-F5D8D5062211.png</file>
+        <file>img/246-2465277_apple-email-envelope-inbox-mail-post-message-messaging-icon-iphone-png.png</file>
+        <file>img/418-4189731_apple-music-icon-square-spotify-apple-music-soundcloud.png</file>
+        <file>img/93634.png</file>
+        <file>img/110025_turn-on_512x512.png</file>
+        <file>img/1265900-200.png</file>
+        <file>img/d3d7ab80bb88809f72e458a1d8aee02c.png</file>
+        <file>img/gMJRp2s.png</file>
+        <file>img/img_275478.png</file>
+        <file>img/phone-phone-icon-png-green-clipart-48635-pinclipart-green-phone-icon-png-880_920.png</file>
+        <file>img/png-clipart-metrostation-black-home-icon-thumbnail.png</file>
+        <file>img/Wifi-tethering.png</file>
+        <file>img/low-battery-5-474981.png</file>
+        <file>img/log-icon.png</file>
+        <file>img/image.png</file>
+        <file>img/1.png</file>
+        <file>img/output-onlinepngtools (1).png</file>
+        <file>img/output-onlinepngtools (2).png</file>
+        <file>img/output-onlinepngtools (3).png</file>
+        <file>img/output-onlinepngtools (4).png</file>
+        <file>img/output-onlinepngtools.png</file>
+    </qresource>
+    <qresource prefix="/">
+        <file>img/Mentor_Graphics-Logo.wine.png</file>
+    </qresource>
+</RCC>
