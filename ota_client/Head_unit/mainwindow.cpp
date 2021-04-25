@@ -128,7 +128,7 @@ void MainWindow::on_pushButton_22_clicked()
 void MainWindow::on_pushButton_16_clicked()
 {
     QQuickView *view = new QQuickView;
-    view->setSource(QUrl::fromLocalFile("../Dashboard/Dashboard.qml"));
+    view->setSource(QUrl::fromLocalFile("home/root/2021GP/ota_client/Dashboard/Dashboard.qml"));
     view->show();
 }
 
