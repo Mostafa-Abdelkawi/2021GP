@@ -20,7 +20,7 @@ MainWindow::MainWindow(QWidget *parent)
     container->setMinimumSize(450, 200);
     container->setMaximumSize(450, 200);*/
     container->setFocusPolicy(Qt::TabFocus);
-    view->setSource(QUrl::fromLocalFile("/home/root/2021GP/ota_client/Dashboard/Dashboard.qml"));
+    view->setSource(QUrl::fromLocalFile("home/root/2021GP/ota_client/Dashboard/Dashboard.qml"));
 
    // ui->verticalLayout->addWidget(container);
 
