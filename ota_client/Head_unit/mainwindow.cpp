@@ -4,12 +4,26 @@
 #include <QMessageBox>
 #include <QCoreApplication>
 #include <QQuickView>
+#include <QtQml/QQmlEngine>
+#include <QtQuick/QQuickView>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+
+    QQuickView *view = new QQuickView();
+    QWidget *container = QWidget::createWindowContainer(view, this);
+    container->setGeometry(300, 250, 450, 200);
+    /*container->move(300,250);
+    container->setMinimumSize(450, 200);
+    container->setMaximumSize(450, 200);*/
+    container->setFocusPolicy(Qt::TabFocus);
+    view->setSource(QUrl::fromLocalFile("/home/engkhalid7/Desktop/Project/OTA/Dashboard/Dashboard.qml"));
+
+   // ui->verticalLayout->addWidget(container);
+
     ui->label_15->setVisible(false);
     ui->label_25->setVisible(false);
     ui->progressBar->setVisible(false);
@@ -75,10 +89,22 @@ void MainWindow::on_pushButton_clicked()
     ui->progressBar->setMaximum(100);
     for( int i = 0; i <101; ++i ) {
        ui->progressBar->setValue(i);
-       QThread::msleep(50);
+       QThread::msleep(100);
     }
 
+    ui->label_11->setText("Phase 2/3:Verfiy");
+    ui->label_14->setText("Verifying......");
+    for( int i = 0; i <101; ++i ) {
+       ui->progressBar->setValue(i);
+       QThread::msleep(100);
+    }
 
+    ui->label_11->setText("Phase 3/3:Install");
+    ui->label_14->setText("Installing......");
+    for( int i = 0; i <101; ++i ) {
+       ui->progressBar->setValue(i);
+       QThread::msleep(100);
+    }
 
 
     QMessageBox::information(this,"Update","The Update Is Compeleted.");
@@ -111,13 +137,6 @@ void MainWindow::on_pushButton_2_clicked()
 void MainWindow::on_pushButton_22_clicked()
 {
     ui->stackedWidget->setCurrentIndex(0);
-}
-
-void MainWindow::on_pushButton_16_clicked()
-{
-    QQuickView *view = new QQuickView;
-    view->setSource(QUrl::fromLocalFile("home/root/2021GP/ota_client/Dashboard/Dashboard.qml"));
-    view->show();
 }
 
 void MainWindow::on_pushButton_23_clicked()
