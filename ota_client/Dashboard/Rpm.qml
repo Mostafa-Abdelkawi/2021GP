@@ -76,7 +76,7 @@ Item {
 
                 }
 				
-				Text {
+		/* Text {
                     anchors.centerIn: parent.horizontalCenter
                     x:0
                     y:id_gear.height*0.09
@@ -85,7 +85,7 @@ Item {
                     text: index * (id_gear.maxSpeed / (id_gear.numberIndexs-1))
                     font.pixelSize: parent.height * 0.15
 					font.family: "Comic Sans MS"
-                }
+                } */
 					
             }
         }
