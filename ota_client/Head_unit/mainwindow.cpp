@@ -15,14 +15,9 @@ MainWindow::MainWindow(QWidget *parent)
 
     QQuickView *view = new QQuickView();
     QWidget *container = QWidget::createWindowContainer(view, this);
-    container->setGeometry(300, 250, 450, 200);
-    /*container->move(300,250);
-    container->setMinimumSize(450, 200);
-    container->setMaximumSize(450, 200);*/
+    container->setGeometry(825, 200, 450, 200);
     container->setFocusPolicy(Qt::TabFocus);
-    view->setSource(QUrl::fromLocalFile("home/root/2021GP/ota_client/Dashboard/Dashboard.qml"));
-
-   // ui->verticalLayout->addWidget(container);
+    view->setSource(QUrl::fromLocalFile("/home/engkhalid7/Desktop/Project/OTA/Dashboard_v1/Dashboard.qml"));
 
     ui->label_15->setVisible(false);
     ui->label_25->setVisible(false);
