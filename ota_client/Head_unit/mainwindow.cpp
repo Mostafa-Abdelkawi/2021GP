@@ -17,7 +17,7 @@ MainWindow::MainWindow(QWidget *parent)
     QWidget *container = QWidget::createWindowContainer(view, this);
     container->setGeometry(825, 200, 450, 200);
     container->setFocusPolicy(Qt::TabFocus);
-    view->setSource(QUrl::fromLocalFile("../Dashboard_v1/Dashboard.qml"));
+    view->setSource(QUrl::fromLocalFile("/home/engkhalid7/Desktop/Project/OTA/Dashboard_v1/Dashboard.qml"));
 
     ui->label_15->setVisible(false);
     ui->label_25->setVisible(false);
